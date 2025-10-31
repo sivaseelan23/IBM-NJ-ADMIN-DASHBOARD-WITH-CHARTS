@@ -1,0 +1,4 @@
+@app.route('/api/performance')
+def performance():
+data = fetch_performance_data()
+return jsonify(data)
