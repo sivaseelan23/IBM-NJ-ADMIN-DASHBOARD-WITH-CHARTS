@@ -1,0 +1,15 @@
+<canvas id="performanceChart"></canvas>
+<script>
+const ctx = document.getElementById('performanceChart');
+new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+datasets: [{
+label: 'Productivity',
+data: [85, 90, 88, 92],
+backgroundColor: '#1f77b4'
+}]
+}
+});
+</script>
